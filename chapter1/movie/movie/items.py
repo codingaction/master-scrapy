@@ -12,3 +12,11 @@ class MovieItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     name = scrapy.Field()
+
+
+class LeetcodeItem(scrapy.Item):
+    num = scrapy.Field()
+    name = scrapy.Field()
+    url = scrapy.Field()
+    htmlContent = scrapy.Field()
+    content = scrapy.Field()

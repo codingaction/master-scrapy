@@ -8,7 +8,9 @@
 
 class MoviePipeline(object):
     def process_item(self, item, spider):
-        print(item['name'])
-        with open("my_meiju.out", 'a', encoding='utf8') as fp:
+        print("Save the {}th question: {}".format(item['num'], item['name']))
+        with open("leetcode.out", 'a', encoding='utf8') as fp:
             fp.write(item['name'] + '\n')
+            fp.write(item['content'] + '\n')
+            fp.write("===========================================\n")
         return item
