@@ -9,8 +9,9 @@
 class LeetcodePipeline(object):
     def process_item(self, item, spider):
         print("Save the {}th question: {}".format(item['num'], item['name']))
-        with open("leetcode_from_cnblogs.out", 'a', encoding='utf8') as fp:
-            fp.write(item['name'] + '\n')
+        with open("leetcode_questions_8_16.out", 'a', encoding='utf8') as fp:
+            fp.write(item['title'] + '\n')
+            # fp.write(item['name'] + '\n')
             fp.write(item['content'] + '\n')
             fp.write("===========================================\n")
         return item

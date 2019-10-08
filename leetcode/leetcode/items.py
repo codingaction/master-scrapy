@@ -14,3 +14,4 @@ class LeetcodeItem(scrapy.Item):
     url = scrapy.Field()
     htmlContent = scrapy.Field()
     content = scrapy.Field()
+    title = scrapy.Field()

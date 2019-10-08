@@ -27,7 +27,6 @@ class LeetcodeSpider(scrapy.Spider):
                 item['name'] = 'Valid'
                 yield item
 
-
     def detail_parse(self, response):
         # 接收上级已爬取的数据
         item = response.meta['item']
